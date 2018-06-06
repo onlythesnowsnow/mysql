@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock %}
+{% block title %}
+    首页
+{% endblock %}
+
+{% block main %}
+
+                            <div class="container">
+	                            <div class="row clearfix">
+                                </div>
+                                    <div class="col-md-4 column">
+		                            </div>
+		                        <div class="col-md-4 column">
+			                    <form id="add_ck" action="{{ url_for('post_add_ck') }}" method="post">
+				                    <div class="form-group">
+					                 <label for="car_name">汽车型号:</label>
+                                     <input type="car_name" class="form-control" name="car_name" id="car_name" placeholder="请输入汽车型号" />
+				                    </div>
+				                    <div class="form-group">
+					                <label for="car_stock">汽车存量：</label>
+                                    <input type="car_stock" class="form-control" name="car_stock" id="car_stock" placeholder="请输入汽车存量"/>
+				                    </div>
+                                    </br>
+                                    <button type="submit" class="btn btn-default" form="add_ck">提交</button>
+			                    </form>
+		                            </div>
+                                    <div class="col-md-4 column">
+		                            </div>
+                                </div>
+                            </div>
+
+{% endblock %}
